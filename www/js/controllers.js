@@ -23,4 +23,12 @@ lanternRecipeApp.controller('LanternRecipeCtrl', ['$scope', '$rootScope', '$http
 	  }
 	$scope.$on('$viewContentLoaded', function(event) {
 	});
+	/*
+	rfduino.list(function(devices) {
+		devices.forEach(function(device) {
+			console.log(device.uuid);
+		}
+	)
+	*/
+}, failure);
   }]);

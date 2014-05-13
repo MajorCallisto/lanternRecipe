@@ -1,10 +1,11 @@
 Lantern Recipe
 =====================
 
-This project uses the ionic framework. http://ionicframework.com/
-Ionic Crash Course: http://tinyurl.com/lwzojd3
+This project uses the **ionic framework**. http://ionicframework.com/
 
-Please note that this project makes use of sass for custom styling. Review the "Using Sass" section below. Reference: http://sass-lang.com/guide
+**Ionic Crash Course:** http://tinyurl.com/lwzojd3
+
+Please note that this project makes use of sass for custom styling. Review the **Using Sass** section below. Reference: http://sass-lang.com/guide
 
 You may need to run `$ sudo` with some of the installation instructions.
 

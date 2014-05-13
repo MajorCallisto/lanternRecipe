@@ -11,6 +11,8 @@ Once they have collected all the necessary ingredients their recipe will be reve
 
 Technologies: RFduino, PhoneGap, Ionic & Node.js
 
+Repositories for the RFduino and the Node.js server will provided soon.
+
 Project team members can find supporting documentation here: http://tinyurl.com/l2kloqg
 
 ## Using this project
@@ -55,7 +57,7 @@ the include to your `ionic.app.css` file which now contains all your Sass code a
 <link href="css/ionic.app.css" rel="stylesheet">
 -->
 ```
-Reference: http://sass-lang.com/guide.
+[Sass Language Reference](http://sass-lang.com/guide)
 
 ##Local Debugging with Apache
 It is highly recommended that UI development be run through a local web server. Just point your virtual server to the 'www' project folder.
@@ -93,6 +95,18 @@ Ionic has its own custom set of command line tools built on top of cordova. To r
 $ ionic run ios -d
 ```
 To quit the debugger just run: Cntr + C OR type `$ quit` then `yes`.
+
+This can be a bit buggy. More on this.
+
+More ionic commands:
+
+ * Build your app: `ionic build [platform]`
+
+ * Simulate your app: `ionic emulate [platform]`
+
+ * Run your app on a device: `ionic run [platform]`
+
+ * Develop in the browser with live reload: `ionic serve`
 
 ## Issues
 https://github.com/blacksanta69/lanternRecipe/issues

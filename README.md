@@ -2,10 +2,20 @@ Lantern Recipe
 =====================
 
 This project uses the ionic framework. http://ionicframework.com/
+Ionic Crash Course: http://tinyurl.com/lwzojd3
 
 Please note that this project makes use of sass for custom styling. Review the "Using Sass" section below. Reference: http://sass-lang.com/guide
 
-You may need to run $ sudo with some of the installation instructions.
+You may need to run `$ sudo` with some of the installation instructions.
+
+It is highly recommended that UI development be run through a local web server. Just point your virtual server to the 'www' project folder.
+Fire up `$ gulp watch` and edit the 'scss/ionic.app.scss' for css styling and off you go.
+
+For RFduino integration and development you will have to deploy to your device (not a simulator).
+For debugging phonegap mobile app development this project uses **weinre** http://tinyurl.com/6quwfna
+
+
+
 
 
 
@@ -36,7 +46,7 @@ While we recommend using the `ionic` utility to create new Ionic projects, you c
 To use this project as is, first clone the repo from GitHub, then run:
 
 ```bash
-$ cd ionic-app-base
+$ cd lanternRecipe
 $ sudo npm install -g cordova ionic gulp
 $ npm install
 $ gulp init

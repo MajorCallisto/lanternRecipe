@@ -17,7 +17,9 @@ Project team members can find supporting documentation here: http://tinyurl.com/
 
 You may need to run `$ sudo` with some of the installation instructions.
 
-This project uses the **ionic framework**. http://ionicframework.com/
+[Installing PhoneGap](http://docs.phonegap.com/en/3.1.0/guide_cli_index.md.html#The%20Command-line%20Interface)
+
+This project uses the [ionic framework](http://ionicframework.com/)
 
 **Ionic Crash Course:** http://tinyurl.com/lwzojd3.
 

@@ -2,12 +2,14 @@ Lantern Recipe
 =====================
 
 Lantern Recipe is a project by the Creative Technologists of Toronto that aims to educate people about urban foraging and the local vegetation that surrounds them.
-iBeacons lanterns are placed within the urban environment close to naturally occurring edible vegetation.
+iBeacon lanterns are placed within the urban environment, close to naturally occurring edible vegetation.
 Players download a mobile application that has a list of ingredients that they must collect in order to complete their recipe.
 The recipe list contains information and hints about where they can collect their ingredients.
 As players follow these clues and approach an active ingredient, the lantern, controlled by an iBeacon will open up to display their ingredient.
 By means of BLE communication the ingredient will be unlocked/collected in their mobile app and they can proceed to collect their next ingredient.
-Once they have collected their all the necessary ingredients their recipe will be revealed and they will be able to taste a real world sample of urban foraged cuisine. Yum.
+Once they have collected all the necessary ingredients their recipe will be revealed and they will be able to taste a real world sample of urban foraged cuisine. Yum.
+
+Technologies: RFduino, PhoneGap, Ionic & Node.js
 
 Project team members can find supporting documentation here: http://tinyurl.com/l2kloqg
 

@@ -1,0 +1,9 @@
+<ion-view title="Ingredients">
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="ingredient in ingredients" type="item-text-wrap" href="#/tab/ingredient/{{ingredient.id}}">
+        {{ingredient.name}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

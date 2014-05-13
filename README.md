@@ -1,23 +1,62 @@
 Lantern Recipe
 =====================
 
-For project setup follow the **Using this project** section. These are boilerplate ionic project setup instructions. Do this first. Then follow the proceeding instructions.
+Lantern Recipe is a project by the Creative Technologists of Toronto that aims to educate people about urban foraging and the local vegetation that surrounds them.
+iBeacons lanterns are placed within the urban environment close to naturally occurring edible vegetation.
+Players download a mobile application that has a list of ingredients that they must collect in order to complete their recipe.
+The recipe list contains information and hints about where they can collect their ingredients.
+As players follow these clues and approach an active ingredient, the lantern, controlled by an iBeacon will open up to display their ingredient.
+By means of BLE communication the ingredient will be unlocked/collected in their mobile app and they can proceed to collect their next ingredient.
+Once they have collected their all the necessary ingredients their recipe will be revealed and they will be able to taste a real world sample of urban foraged cuisine. Yum.
 
 Project team members can find supporting documentation here: http://tinyurl.com/l2kloqg
 
-###Ionic Framework
+## Using this project
+
+You may need to run `$ sudo` with some of the installation instructions.
+
 This project uses the **ionic framework**. http://ionicframework.com/
 
-**Ionic Crash Course:** http://tinyurl.com/lwzojd3
+**Ionic Crash Course:** http://tinyurl.com/lwzojd3.
 
-###Styling with Sass
-Please note that this project makes use of sass for custom styling. Review the **Using Sass** section below. Reference: http://sass-lang.com/guide.
-Fire up `$ gulp watch` and edit the `scss/ionic.app.scss` for css styling and off you go.
+More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page.
 
-###Local Debugging with Apache
-It is highly recommended that UI development be run through a local web server. Just point your virtual server to the 'www' project folder
+## Installation
+Make sure the `ionic` utility is installed:
 
-###Device Debugging with Weinre
+```bash
+$ sudo npm install -g ionic
+```
+To use this project as is, first clone the repo from GitHub, then run:
+
+```bash
+$ cd lanternRecipe
+$ sudo npm install -g cordova ionic gulp
+$ npm install
+$ gulp init
+```
+
+## Using Sass
+
+This project makes use of Sass (the SCSS syntax). This enables you to override styles from Ionic, and benefit from
+Sass's great features.
+
+Just update the `./scss/ionic.app.scss` file, and run `gulp` or `gulp watch` to rebuild the CSS files for Ionic.
+
+Note: if you choose to use the Sass method, make sure to remove the included `ionic.css` file in `index.html`, and then uncomment
+the include to your `ionic.app.css` file which now contains all your Sass code and Ionic itself:
+
+```html
+<!-- IF using Sass (run gulp sass first), then remove the CSS include above
+<link href="css/ionic.app.css" rel="stylesheet">
+-->
+```
+Reference: http://sass-lang.com/guide.
+
+##Local Debugging with Apache
+It is highly recommended that UI development be run through a local web server. Just point your virtual server to the 'www' project folder.
+
+##Device Debugging with Weinre
 For RFduino integration and development you will have to deploy to your device (not a simulator).
 For debugging phonegap mobile app development this project uses **weinre** http://tinyurl.com/6quwfna
 
@@ -34,7 +73,7 @@ Replace the following script tag in `www/index.html` with the one specified. Rea
 
 To start debugging click the first link at the top of weinre, web inspector remote page. You will see "Targets: none" until you run the app on a device.
 
-###Install the RFduino Phonegap plugin
+##Install the RFduino Phonegap plugin
 This should already be done but for reference the git can be found here: https://github.com/don/cordova-plugin-rfduino
 
 Make sure you have your platforms installed first.
@@ -44,62 +83,12 @@ To install plugin run:
 
 The RFduino repo with examples for your RFduino hardware can be found here: https://github.com/RFduino/RFduino
 
-###Run Ionic Phonegap App on a Device
+##Run Ionic Phonegap App on a Device
 Ionic has its own custom set of command line tools built on top of cordova. To run the phonegap app just run:
 ```bash
 $ ionic run ios -d
 ```
 To quit the debugger just run: Cntr + C OR type `$ quit` then `yes`.
 
-## Using this project
-
-You may need to run `$ sudo` with some of the installation instructions.
-
-We recommend using the `ionic` utility to create new Ionic projects that are based on this project but use a ready-made starter template.
-
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
-
-```bash
-$ sudo npm install -g ionic
-```
-
-Then run:
-
-```bash
-$ sudo npm install -g ionic
-$ ionic start myProject tabs
-```
-
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page.
-
-## Installation
-
-While we recommend using the `ionic` utility to create new Ionic projects, you can use this repo as a barebones starting point to your next Ionic app.
-
-To use this project as is, first clone the repo from GitHub, then run:
-
-```bash
-$ cd lanternRecipe
-$ sudo npm install -g cordova ionic gulp
-$ npm install
-$ gulp init
-```
-
-## Using Sass (optional)
-
-This project makes it easy to use Sass (the SCSS syntax) in your projects. This enables you to override styles from Ionic, and benefit from
-Sass's great features.
-
-Just update the `./scss/ionic.app.scss` file, and run `gulp` or `gulp watch` to rebuild the CSS files for Ionic.
-
-Note: if you choose to use the Sass method, make sure to remove the included `ionic.css` file in `index.html`, and then uncomment
-the include to your `ionic.app.css` file which now contains all your Sass code and Ionic itself:
-
-```html
-<!-- IF using Sass (run gulp sass first), then remove the CSS include above
-<link href="css/ionic.app.css" rel="stylesheet">
--->
-```
 ## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/contribute/#issues) to the main Ionic repository. On the other hand, pull requests are welcome here!
-
+https://github.com/blacksanta69/lanternRecipe/issues

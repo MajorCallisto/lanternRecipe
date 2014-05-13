@@ -1,7 +1,7 @@
 Lantern Recipe
 =====================
 
-Lantern Recipe is a project by the Creative Technologists of Toronto that aims to educate people about urban foraging and the local vegetation that surrounds them.
+Lantern Recipe is a project by the [Creative Technologists of Toronto](http://cttoronto.com/) that aims to educate people about urban foraging and the local vegetation that surrounds them.
 iBeacon lanterns are placed within the urban environment, close to naturally occurring edible vegetation.
 Players download a mobile application that has a list of ingredients that they must collect in order to complete their recipe.
 The recipe list contains information and hints about where they can collect their ingredients.

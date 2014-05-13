@@ -3,6 +3,8 @@ Lantern Recipe
 
 For project setup follow the **Using this project** section. These are boilerplate ionic project setup instructions. Do this first. Then follow the proceeding instructions.
 
+Project team members can find supporting documentation here: http://tinyurl.com/l2kloqg
+
 ###Ionic Framework
 This project uses the **ionic framework**. http://ionicframework.com/
 

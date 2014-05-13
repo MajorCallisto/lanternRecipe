@@ -1,8 +1,14 @@
-Ionic App Base
+Lantern Recipe
 =====================
 
-A starting project for Ionic that optionally supports
-using custom SCSS.
+This project uses the ionic framework. http://ionicframework.com/
+
+Please note that this project makes use of sass for custom styling. Review the "Using Sass" section below. Reference: http://sass-lang.com/guide
+
+You may need to run $ sudo with some of the installation instructions.
+
+
+
 
 ## Using this project
 

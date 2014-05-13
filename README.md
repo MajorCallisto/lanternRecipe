@@ -30,7 +30,7 @@ Navigate to: `http://<youripaddress>:8080` and you should see the web inspector 
 Replace the following script tag in `www/index.html` with the one specified. Really you just need to update the the ip address.
 `<script src="http://<youripaddress>:8080/target/target-script-min.js#anonymous"></script>`
 
-To start debugging click the first link at the top of weinre web inspector remote page. You will see "Targets: none" until you run the app on a device.
+To start debugging click the first link at the top of weinre, web inspector remote page. You will see "Targets: none" until you run the app on a device.
 
 ###Install the RFduino Phonegap plugin
 This should already be done but for reference the git can be found here: https://github.com/don/cordova-plugin-rfduino
@@ -40,6 +40,7 @@ Make sure you have your platforms installed first.
 To install plugin run:
 `$ cordova plugin add com.megster.cordova.rfduino`
 
+The RFduino repo with examples for your RFduino hardware can be found here: https://github.com/RFduino/RFduino
 
 ###Run Ionic Phonegap App on a Device
 Ionic has its own custom set of command line tools built on top of cordova. To run the phonegap app just run:

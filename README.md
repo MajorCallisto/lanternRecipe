@@ -1,28 +1,56 @@
 Lantern Recipe
 =====================
 
-#Ionic Framework
+For project setup follow the **Using this project** section. These are boilerplate ionic project setup instructions. Do this first. Then follow the proceeding instructions.
+
+###Ionic Framework
 This project uses the **ionic framework**. http://ionicframework.com/
 
 **Ionic Crash Course:** http://tinyurl.com/lwzojd3
 
-Please note that this project makes use of sass for custom styling. Review the **Using Sass** section below. Reference: http://sass-lang.com/guide
+###Styling with Sass
+Please note that this project makes use of sass for custom styling. Review the **Using Sass** section below. Reference: http://sass-lang.com/guide.
+Fire up `$ gulp watch` and edit the `scss/ionic.app.scss` for css styling and off you go.
 
-You may need to run `$ sudo` with some of the installation instructions.
+###Local Debugging with Apache
+It is highly recommended that UI development be run through a local web server. Just point your virtual server to the 'www' project folder
 
-It is highly recommended that UI development be run through a local web server. Just point your virtual server to the 'www' project folder.
-Fire up `$ gulp watch` and edit the 'scss/ionic.app.scss' for css styling and off you go.
-
+###Device Debugging with Weinre
 For RFduino integration and development you will have to deploy to your device (not a simulator).
 For debugging phonegap mobile app development this project uses **weinre** http://tinyurl.com/6quwfna
 
+In terminal run:
+```bash
+$ weinre -boundHost <youripaddress>
+```
+*Weinre runs on port 8080 so be aware in case you are running other servers on that port.*
+
+Navigate to: `http://<youripaddress>:8080` and you should see the web inspector remote. Three sections down you should see the **Target Script** section.
+
+Replace the following script tag in `www/index.html` with the one specified. Really you just need to update the the ip address.
+`<script src="http://<youripaddress>:8080/target/target-script-min.js#anonymous"></script>`
+
+To start debugging click the first link at the top of weinre web inspector remote page. You will see "Targets: none" until you run the app on a device.
+
+###Install the RFduino Phonegap plugin
+This should already be done but for reference the git can be found here: https://github.com/don/cordova-plugin-rfduino
+
+Make sure you have your platforms installed first.
+
+To install plugin run:
+`$ cordova plugin add com.megster.cordova.rfduino`
 
 
-
-
-
+###Run Ionic Phonegap App on a Device
+Ionic has its own custom set of command line tools built on top of cordova. To run the phonegap app just run:
+```bash
+$ ionic run ios -d
+```
+To quit the debugger just run: Cntr + C OR type `$ quit` then `yes`.
 
 ## Using this project
+
+You may need to run `$ sudo` with some of the installation instructions.
 
 We recommend using the `ionic` utility to create new Ionic projects that are based on this project but use a ready-made starter template.
 

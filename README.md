@@ -62,6 +62,8 @@ the include to your `ionic.app.css` file which now contains all your Sass code a
 ##Local Debugging with Apache
 It is highly recommended that UI development be run through a local web server. Just point your virtual server to the 'www' project folder.
 
+You can also use ionic's built in server: `ionic serve`
+
 ##Device Debugging with Weinre
 For RFduino integration and development you will have to deploy to your device (not a simulator).
 For debugging phonegap mobile app development this project uses [weinre](http://tinyurl.com/6quwfna)

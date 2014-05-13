@@ -62,7 +62,7 @@ It is highly recommended that UI development be run through a local web server. 
 
 ##Device Debugging with Weinre
 For RFduino integration and development you will have to deploy to your device (not a simulator).
-For debugging phonegap mobile app development this project uses **weinre** http://tinyurl.com/6quwfna
+For debugging phonegap mobile app development this project uses [weinre](http://tinyurl.com/6quwfna)
 
 In terminal run:
 ```bash

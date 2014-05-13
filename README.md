@@ -1,6 +1,7 @@
 Lantern Recipe
 =====================
 
+#Ionic Framework
 This project uses the **ionic framework**. http://ionicframework.com/
 
 **Ionic Crash Course:** http://tinyurl.com/lwzojd3

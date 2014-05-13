@@ -21,7 +21,7 @@ You may need to run `$ sudo` with some of the installation instructions.
 
 This project uses the [ionic framework](http://ionicframework.com/)
 
-**Ionic Crash Course:** http://tinyurl.com/lwzojd3.
+[Ionic Crash Course](http://tinyurl.com/lwzojd3)
 
 More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page.
 

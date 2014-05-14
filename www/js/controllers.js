@@ -2,16 +2,31 @@ angular.module('starter.controllers', [])
 
     .controller('IntroductionCtrl', function ($scope, $state, StaticText, UserInfo) {
         $scope.staticText = StaticText.get($state.$current.toString());
-        $scope.userInfo = UserInfo.all();
-        console.log($scope.userInfo);
-        $scope.submit = function () {
-            $state.go('tab.about');
-            UserInfo.set()
-            //console.log()
-            //alert('submit')
+        $scope.userInfo = UserInfo.userInfo;
+       // console.log($scope.userInfo);
+        $scope.update = function (user, isValid) {
+            $scope.submitted = true;
+            if (isValid) {
+                UserInfo.userInfo = angular.copy(user);
+                $state.go('tab.about')
+            }
             //window.location.href = '#/tab/about/';
             //$location.url('#/tab/about/')
         }
+
+        $scope.submitForm = function(userForm) {
+            $scope.submitted = true;
+            console.log(userForm.$valid)
+            // check to make sure the form is completely valid
+            if (userForm.$valid) {
+                console.log("userForm:",userForm.userName);
+                console.log("UserInfo.userInfo",UserInfo.userInfo);
+                console.log("angular.copy($scope.userInfo):",angular.copy($scope.userInfo))
+                UserInfo.userInfo = angular.copy($scope.userInfo);
+
+            }
+
+        };
     })
 
     .controller('AboutCtrl', function ($scope, $state, StaticText) {
@@ -36,7 +51,8 @@ angular.module('starter.controllers', [])
 
     .controller('ProfileCtrl', function ($scope, $state, StaticText, UserInfo) {
         $scope.staticText = StaticText.get('profile');
-        $scope.userInfo = UserInfo.all();
+        $scope.userInfo = UserInfo.userInfo;
+        //$scope.userInfo = UserInfo.all();
         $scope.submit = function () {
             $state.go('tab.about');
             //console.log()

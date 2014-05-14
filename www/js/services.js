@@ -93,7 +93,9 @@ angular.module('starter.services', [])
             return userInfo[id];
         },
         set: function(obj){
-            //userInfo
+            for (var attrname in obj) {
+                userInfo[attrname] = obj[attrname];
+            }
         }
     }
 });

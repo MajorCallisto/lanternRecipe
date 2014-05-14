@@ -23,7 +23,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-
+      .state('introduction', {
+          url: '/introduction',
+          templateUrl: 'templates/introduction.html',
+          controller: 'IntroductionCtrl'
+      })
     // setup an abstract state for the tabs directive
     .state('tab', {
       url: "/tab",
@@ -33,47 +37,47 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     // Each tab has its own nav history stack:
 
-    .state('tab.dash', {
-      url: '/dash',
+    .state('tab.about', {
+      url: '/about',
       views: {
-        'tab-dash': {
-          templateUrl: 'templates/tab-dash.html',
-          controller: 'DashCtrl'
+        'tab-about': {
+          templateUrl: 'templates/tab-about.html',
+          controller: 'AboutCtrl'
         }
       }
     })
 
-    .state('tab.friends', {
-      url: '/friends',
+    .state('tab.ingredients', {
+      url: '/ingredients',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
+        'tab-ingredients': {
+          templateUrl: 'templates/tab-ingredients.html',
+          controller: 'IngredientsCtrl'
         }
       }
     })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
+    .state('tab.ingredient-detail', {
+      url: '/ingredient/:ingredientId',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
+        'tab-ingredients': {
+          templateUrl: 'templates/ingredient-detail.html',
+          controller: 'IngredientDetailCtrl'
         }
       }
     })
 
-    .state('tab.account', {
-      url: '/account',
+    .state('tab.profile', {
+      url: '/profile',
       views: {
         'tab-account': {
-          templateUrl: 'templates/tab-account.html',
-          controller: 'AccountCtrl'
+          templateUrl: 'templates/tab-profile.html',
+          controller: 'ProfileCtrl'
         }
       }
     })
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('introduction');
 
 });
 

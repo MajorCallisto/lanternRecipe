@@ -38,11 +38,11 @@
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		48CE8A0747F546779BB83EFD /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C98F83C59048CC929DBB01 /* CDVLogger.m */; };
-		20117289DDDD428EAE92C28B /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E4A9D6A2C44239E1D255D /* CDVDevice.m */; };
-		74AB531BDF0E4213A40E77FA /* MEGRFduino.m in Sources */ = {isa = PBXBuildFile; fileRef = 99955D14B8D84B02A06E111C /* MEGRFduino.m */; };
-		873B97F7E93341968671FB21 /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DABD99EFB844F489FE40E03 /* CBPeripheral+Extensions.m */; };
-		9B07A7F1FB9145FFA60EA7E2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212D0366FFC54526A7D6A776 /* CoreBluetooth.framework */; };
+		B0E27EDE7D7F41AEBB3000D1 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D072D606654A4AA709058A /* CDVLogger.m */; };
+		BB460861574C4E88AE8F01C6 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CC378EE4044F619D5B7384 /* CDVDevice.m */; };
+		46F50B6FD0A54A1DBDF758A3 /* MEGRFduino.m in Sources */ = {isa = PBXBuildFile; fileRef = 07746A7045E64E839FA9B534 /* MEGRFduino.m */; };
+		816FF38E742B4A818CE5D35F /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0540468BBC1B4D21A0EA5919 /* CBPeripheral+Extensions.m */; };
+		0233E1AFFBE843FFA6A95BEC /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D03BAF5DCD64FB6864D327C /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,15 +107,15 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Lantern Recipe/config.xml"; sourceTree = "<group>"; };
-		01C98F83C59048CC929DBB01 /* CDVLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLogger.m"; path = "org.apache.cordova.console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		9A9B133FC33C4B0B99550FF6 /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "org.apache.cordova.console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		189E4A9D6A2C44239E1D255D /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		66E2989EFA114C5AB39CEC43 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		99955D14B8D84B02A06E111C /* MEGRFduino.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MEGRFduino.m"; path = "com.megster.cordova.rfduino/RFduino/MEGRFduino.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		1DABD99EFB844F489FE40E03 /* CBPeripheral+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CBPeripheral+Extensions.m"; path = "com.megster.cordova.rfduino/RFduino/CBPeripheral+Extensions.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		C1EF868C29ED42FD852BEEC6 /* MEGRFduino.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MEGRFduino.h"; path = "com.megster.cordova.rfduino/RFduino/MEGRFduino.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		9528BC39BBB74C4A86485F4E /* CBPeripheral+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CBPeripheral+Extensions.h"; path = "com.megster.cordova.rfduino/RFduino/CBPeripheral+Extensions.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		212D0366FFC54526A7D6A776 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		55D072D606654A4AA709058A /* CDVLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLogger.m"; path = "org.apache.cordova.console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A6C6F6EE656B4E9AAEDDE35C /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "org.apache.cordova.console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A2CC378EE4044F619D5B7384 /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		38FD585BF89841B9B22E4A07 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		07746A7045E64E839FA9B534 /* MEGRFduino.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MEGRFduino.m"; path = "com.megster.cordova.rfduino/RFduino/MEGRFduino.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		0540468BBC1B4D21A0EA5919 /* CBPeripheral+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CBPeripheral+Extensions.m"; path = "com.megster.cordova.rfduino/RFduino/CBPeripheral+Extensions.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		C0BDF37183A3403D82C5C609 /* MEGRFduino.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MEGRFduino.h"; path = "com.megster.cordova.rfduino/RFduino/MEGRFduino.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		6E8565968933476F97ACE423 /* CBPeripheral+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CBPeripheral+Extensions.h"; path = "com.megster.cordova.rfduino/RFduino/CBPeripheral+Extensions.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		6D03BAF5DCD64FB6864D327C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
-				9B07A7F1FB9145FFA60EA7E2 /* CoreBluetooth.framework in Frameworks */,
+				0233E1AFFBE843FFA6A95BEC /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +222,7 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
-				212D0366FFC54526A7D6A776 /* CoreBluetooth.framework */,
+				6D03BAF5DCD64FB6864D327C /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -238,14 +238,14 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				01C98F83C59048CC929DBB01 /* CDVLogger.m */,
-				9A9B133FC33C4B0B99550FF6 /* CDVLogger.h */,
-				189E4A9D6A2C44239E1D255D /* CDVDevice.m */,
-				66E2989EFA114C5AB39CEC43 /* CDVDevice.h */,
-				99955D14B8D84B02A06E111C /* MEGRFduino.m */,
-				1DABD99EFB844F489FE40E03 /* CBPeripheral+Extensions.m */,
-				C1EF868C29ED42FD852BEEC6 /* MEGRFduino.h */,
-				9528BC39BBB74C4A86485F4E /* CBPeripheral+Extensions.h */,
+				55D072D606654A4AA709058A /* CDVLogger.m */,
+				A6C6F6EE656B4E9AAEDDE35C /* CDVLogger.h */,
+				A2CC378EE4044F619D5B7384 /* CDVDevice.m */,
+				38FD585BF89841B9B22E4A07 /* CDVDevice.h */,
+				07746A7045E64E839FA9B534 /* MEGRFduino.m */,
+				0540468BBC1B4D21A0EA5919 /* CBPeripheral+Extensions.m */,
+				C0BDF37183A3403D82C5C609 /* MEGRFduino.h */,
+				6E8565968933476F97ACE423 /* CBPeripheral+Extensions.h */,
 			);
 			name = Plugins;
 			path = "Lantern Recipe/Plugins";
@@ -440,10 +440,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				48CE8A0747F546779BB83EFD /* CDVLogger.m in Sources */,
-				20117289DDDD428EAE92C28B /* CDVDevice.m in Sources */,
-				74AB531BDF0E4213A40E77FA /* MEGRFduino.m in Sources */,
-				873B97F7E93341968671FB21 /* CBPeripheral+Extensions.m in Sources */,
+				B0E27EDE7D7F41AEBB3000D1 /* CDVLogger.m in Sources */,
+				BB460861574C4E88AE8F01C6 /* CDVDevice.m in Sources */,
+				46F50B6FD0A54A1DBDF758A3 /* MEGRFduino.m in Sources */,
+				816FF38E742B4A818CE5D35F /* CBPeripheral+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

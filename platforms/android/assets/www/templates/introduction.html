@@ -1,0 +1,18 @@
+<ion-view title="{{staticText.title}}" >
+  <ion-content class="has-header padding">
+      <h1>{{staticText.h1}}</h1>
+      <p>{{staticText.p1}}</p>
+      <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" value="{{userInfo.userName}}" placeholder="{{staticText.placeholder}}">
+              <!--<input type="text" placeholder="User Name">-->
+          </label>
+      </div>
+      <div class="padding">
+          <button class="button button-block button-stable" ng-click="submit()">{{staticText.submit}}</button>
+      </div>
+      <!--
+      <a class="button button-stable icon-right ion-chevron-right" href="#/tab/about">{{staticText.button1}}</a>
+      -->
+  </ion-content>
+</ion-view>

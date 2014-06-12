@@ -96,6 +96,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 }
             })
 
+            .state('tab.debug', {
+            url: '/debug',
+            views: {
+                'tab-account': {
+                    templateUrl: 'templates/tab-debug.html',
+                    controller: 'DebugCtrl'
+                }
+            }
+        })
+
 
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('introduction');

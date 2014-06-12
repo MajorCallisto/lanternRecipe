@@ -35,126 +35,84 @@ angular.module('starter.controllers', [])
 
     }])
 
-    .controller('LoginCtrl', function ($scope, $state, StaticText, UserLogin, $http) {
+    .controller('LoginCtrl', ['$scope', '$state', 'StaticText', '$http',function ($scope, $state, StaticText, $http) {
+
         $scope.staticText = StaticText.get($state.$current.toString());
-
-        $scope.userLogin = UserLogin;
-
         $scope.master = {};
+        $scope.submitted = false;
+        $scope.invalidCredentials = false;
 
-        $scope.update = function (user) {
-            $scope.master = angular.copy(user);
-            console.log('user: ',user);
+        $scope.submitForm = function (valid) {
+            console.log('$scope.update');
+            console.log('valid: ',valid);
+            $scope.submitted = true;
 
+            if(!valid) return;
 
-            $http.post("http://cttoronto.cloudapp.net/api/players/login", user).success(function(result) {
-                console.log(result);
-                //$scope.resultPost = result;
+            $scope.master = angular.copy($scope.user);
+
+            $http.post("http://cttoronto.cloudapp.net/api/players/login", $scope.master).success(function(data) {
+                console.log(data);
+                if(data.result.error){
+                    $scope.invalidCredentials = true;
+                }else{
+                    $scope.invalidCredentials = false;
+                    $state.go('tab.about');
+                }
             }).error(function() {
                 console.log("error");
             });
-            /*
-            $scope.userLogin.save(user, function(response) {
-                console.log(response);
-            });
-            */
+
         };
 
         $scope.reset = function() {
             $scope.user = angular.copy($scope.master);
+            $scope.submitted = false;
+            $scope.invalidCredentials = false;
         };
 
         $scope.reset();
-    })
+    }])
 
-    .controller('RegistrationCtrl', function ($scope, $state, StaticText, UserInfo, $http) {
+    .controller('RegistrationCtrl', ['$scope', '$state', 'StaticText', '$http', function ($scope, $state, StaticText, $http) {
+
         $scope.staticText = StaticText.get($state.$current.toString());
-        //$scope.userInfo = UserInfo.userInfo;
-
         $scope.master = {};
+        $scope.submitted = false;
+        $scope.invalidCredentials = false;
 
-        /*
-        $scope.$watch('user.email', function(value) {
-            $scope.user.email = value
-        });
-        */
+        $scope.submitForm = function (valid) {
+            console.log('$scope.update');
+            console.log('valid: ',valid);
+            $scope.submitted = true;
 
-        $scope.update = function (user) {
+            if(!valid) return;
 
-            if (user.$invalid) {
-                alert('our form is amazing');
-                return;
-            }
-            $scope.master = angular.copy(user);
-           /* $http({method: 'JSONP', url: 'http://cttoronto.cloudapp.net/api/players/register'}, user).
-                success(function(data, status, headers, config) {
-                    console.log(data)
-                    console.log(status)
-                    console.log(headers)
-                    console.log(config)
-                    // this callback will be called asynchronously
-                    // when the response is available
-                }).
-                error(function(data, status, headers, config) {
-                    // called asynchronously if an error occurs
-                    // or server returns response with an error status.
-                });*/
+            $scope.master = angular.copy($scope.user);
 
-            /*user = {
-                given_name: 'sldkjfs',
-                family_name: 'lsdkjfs',
-                password: 'ksjflkjsd',
-                email: 'e@e.ca'
-
-            }*/
-            console.log('user: ',user);
-            console.log('user: ',user.$valid);
-
-            if (user.$valid) {
-                alert('our form is amazing');
-            }
-
-
-            $http.post("http://cttoronto.cloudapp.net/api/players/register", user).success(function(result) {
-                console.log("success",result);
-                //$scope.resultPost = result;
+            $http.post("http://cttoronto.cloudapp.net/api/players/register", $scope.master).success(function(data) {
+                console.log(data);
+                if(data.result.error){
+                    $scope.invalidCredentials = true;
+                }else{
+                    $scope.invalidCredentials = false;
+                    $state.go('tab.about');
+                }
             }).error(function() {
                 console.log("error");
             });
-            /*
-            $state.go('login')
-            return;
-            $scope.submitted = true;
-            if (isValid) {
-                UserInfo.userInfo = angular.copy(user);
-                $state.go('tab.about')
-            }
-            //window.location.href = '#/tab/about/';
-            //$location.url('#/tab/about/')
 
-            */
         };
 
         $scope.reset = function() {
             $scope.user = angular.copy($scope.master);
+            $scope.submitted = false;
+            $scope.invalidCredentials = false;
         };
 
         $scope.reset();
 
-        $scope.submitForm = function (userForm) {
-            $scope.submitted = true;
-            console.log(userForm.$valid)
-            // check to make sure the form is completely valid
-            if (userForm.$valid) {
-                console.log("userForm:", userForm.userName);
-                console.log("UserInfo.userInfo", UserInfo.userInfo);
-                console.log("angular.copy($scope.userInfo):", angular.copy($scope.userInfo))
-                UserInfo.userInfo = angular.copy($scope.userInfo);
-
-            }
-
-        };
-    })
+    }])
 
     .controller('AboutCtrl', function ($scope, $state, StaticText) {
         $scope.staticText = StaticText.get('about');
@@ -187,6 +145,12 @@ angular.module('starter.controllers', [])
             //window.location.href = '#/tab/about/';
             //$location.url('#/tab/about/')
         }
+        console.log($state);
+    })
+
+    .controller('DebugCtrl', function ($scope, $stateParams, $state, StaticText) {
+        $scope.staticText = StaticText.get($state.$current.toString());
+
         console.log($state);
     });
 

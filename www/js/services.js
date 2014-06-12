@@ -256,27 +256,12 @@ angular.module('starter.services', ['ngResource'])
         }
     })
 
-    .factory('Player', function () {
+    .factory('Player', function ($resource) {
         // Might use a resource here that returns a JSON array
 
         // Some fake testing data
-        var userInfo = {
-            userName: '',
-            userId: ''
-        };
-
-        return {
-            all: function () {
-                return userInfo;
-            },
-            get: function (id) {
-                if (!id) return 'undefined';
-                return userInfo[id];
-            },
-            set: function (obj) {
-                for (var attrname in obj) {
-                    userInfo[attrname] = obj[attrname];
-                }
-            }
-        }
+        /*$resource(url, {callback: "JSON_CALLBACK"}, {
+                            query: {method: 'JSONP', params: {}, isArray: false}
+                        })*/
+        return $resource( 'http://cttoronto.cloudapp.net/api/players/register');
     });;
